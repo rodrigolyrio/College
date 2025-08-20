@@ -5,8 +5,11 @@ public class Banco {
         Pessoa p1 = new Pessoa("Rodrigo", "123.456.789-00", new Data(5,8,1998), 'M');
         Pessoa p2 = new Pessoa("Gepeto", "098.876.234-55", new Data(20,12,1995), 'F');
 
-        int IdadeP1 = p1.idade(new Data(20,8,2025));
-        System.out.println(IdadeP1);
+        int IdadeP1 = p1.idade(new Data(20, 8, 2025));
+        int IdadeP2 = p2.idade(new Data(20, 8, 2025));
+
+        System.out.println("A Idade de " + p1.nome + " é " + IdadeP1);
+        System.out.println("A Idade de " + p2.nome + " é " + IdadeP2);
 
         Conta c1 = new Conta("1234-5", p1);
         Conta c2 = new Conta("2345-6", p2);
