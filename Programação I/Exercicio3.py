@@ -1,4 +1,4 @@
-ef main():
+def main():
     a = int(input("número: "))
     print (a-1)
     return 0
